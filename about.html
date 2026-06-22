@@ -52,8 +52,9 @@
     <header class="main-header">
         <div class="header-branding">
             <div class="logo">
-               <a href="./index.html"> <img src="img/logo.png" alt="Medicare" class="logo-img" /></a>
+                <img src="img/logo.png" alt="Medicare" class="logo-img" />
             </div>
+
             <div class="header-info-strip">
                 <div class="info-block">
                     <img src="img/location-pin-svgrepo-com (1).svg" alt="Location" class="info-icon" />
@@ -62,9 +63,11 @@
                         <p>5525 W Slauson Ave,<br>LA, CA 90056, USA</p>
                     </div>
                 </div>
+
                 <div class="vertical-divider"></div>
+
                 <div class="info-block">
-                        <img src="img/headset-svgrepo-com.svg" alt="Phone" class="info-icon" />
+                    <img src="img/headset-svgrepo-com.svg" alt="Phone" class="info-icon" />
                     <div class="info-text">
                         <h3>Phone Appointment</h3>
                         <p><a href="tel:5555551234">(555) 555-1234</a></p>
@@ -72,26 +75,51 @@
                     </div>
                 </div>
             </div>
-            <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
-                <span class="hamburger-bar"></span>
-                <span class="hamburger-bar"></span>
-                <span class="hamburger-bar"></span>
-            </button>
+
+            <div class="mobile-nav-toggle-wrapper">
+                <a href="#mobileMenuModal" class="mobile-nav-toggle" aria-label="Toggle Navigation">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </a>
+                <div id="mobileMenuModal" class="mobile-menu-overlay">
+                    <a href="#" class="mobile-menu-close-zone"></a>
+                    <div class="mobile-menu-dropdown-card">
+                        <div class="mobile-menu-header">
+                            <img src="img/logo.png" alt="Medicare" class="mobile-logo-img" />
+                            <a href="#" class="mobile-menu-close-btn">&times;</a>
+                        </div>
+                        <ul class="mobile-nav-links-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="blog-details.html">Blog Detail</a></li>
+                            <li><a href="#">Researches</a></li>
+                            <li><a href="#">Research Detail</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Starter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <nav class="nav-bar">
             <ul class="nav-links">
                 <li class="has-dropdown">
-                    <a href="index.html">Home <img src="img/triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a>
+                    <a href="#">Home <img src="img/triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a>
                     <ul class="dropdown-menu">
-                        <li><a href="index.html">Header Static</a></li>
-                        <li><a href="index.html">Header Slider</a></li>
+                        <li><a href="#">Header Static</a></li>
+                        <li><a href="#">Header Slider</a></li>
+                        <li><a href="#">Youtube Background</a></li>
+                        <li><a href="#">Self Hosted Video</a></li>
+                        <li><a href="#">RTL</a></li>
                     </ul>
                 </li>
                 <li class="has-dropdown">
                     <a href="#">Pages <img src="img/triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a>
                     <ul class="dropdown-menu">
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="./about.html">About</a></li>
                         <li><a href="./blog.html">Blog</a></li>
                         <li><a href="./blog-details.html">Blog Detail</a></li>
                         <li><a href="#">Researches</a></li>
@@ -102,7 +130,8 @@
                 </li>
                 <li><a href="#">Components <img src="./triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a></li>
                 <li><a href="#">Utilities <img src="./triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a></li>
-                <li><a href="#">Documentation <img src="./triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a></li>
+                <li><a href="#">Documentation <img src="./triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a>
+                </li>
             </ul>
         </nav>
     </header>
