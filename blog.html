@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicare Blog - Center of excellence</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="cou_and_feild_box">
+            <div class="language-selector">
+                <div class="lang-trigger">
+                    <img src="./india.jpg" alt="India Flag" class="country_img">
+                    <span class="lang-arrow">▼</span>
+                </div>
+                <ul class="lang-dropdown">
+                    <li class="lang-item active">
+                        <img src="./india.jpg" alt="IN">
+                        <span class="lang-text">IN</span>
+                        <span class="lang-check">✓</span>
+                    </li>
+                    <li class="lang-item">
+                        <img src="uk.png" alt="UK">
+                        <span class="lang-text">UK</span>
+                        <span class="lang-check"></span>
+                    </li>
+                    <li class="lang-item">
+                        <img src="./us.jpg" alt="US">
+                        <span class="lang-text">US</span>
+                        <span class="lang-check"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search..." id="input" />
+                <span class="icon">🔍</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="doctor-btn btn-alt desktop-text">Find a Doctor</button>
+            <button class="doctor-btn btn-alt mobile-text">Doctor</button>
+            <a href="index.html#appointmentModal"><button class="appointment-btn btn-primary desktop-text">Request Appointment</button></a>
+            <a href="index.html#appointmentModal"><button class="appointment-btn btn-primary mobile-text">Appointment</button></a>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="header-branding">
+            <div class="logo">
+               <a href="./index.html"> <img src="logo.png" alt="Medicare" class="logo-img" /></a>
+            </div>
+            <div class="header-info-strip">
+                <div class="info-block">
+                    <img src="location-pin-svgrepo-com (1).svg" alt="Location" class="info-icon" />
+                    <div class="info-text">
+                        <h3>Address</h3>
+                        <p>5525 W Slauson Ave,<br>LA, CA 90056, USA</p>
+                    </div>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="info-block">
+                    <img src="headset-svgrepo-com.svg" alt="Phone" class="info-icon" />
+                    <div class="info-text">
+                        <h3>Phone Appointment</h3>
+                        <p><a href="tel:5555551234">(555) 555-1234</a></p>
+                        <p><a href="tel:5555555678">(555) 555-5678</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile-nav-toggle-wrapper">
+                <a href="#mobileMenuModal" class="mobile-nav-toggle" aria-label="Toggle Navigation">
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                    <span class="hamburger-bar"></span>
+                </a>
+                <div id="mobileMenuModal" class="mobile-menu-overlay">
+                    <a href="#" class="mobile-menu-close-zone"></a>
+                    <div class="mobile-menu-dropdown-card">
+                        <div class="mobile-menu-header">
+                            <img src="logo.png" alt="Medicare" class="mobile-logo-img" />
+                            <a href="#" class="mobile-menu-close-btn">&times;</a>
+                        </div>
+                        <ul class="mobile-nav-links-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Blog Detail</a></li>
+                            <li><a href="#">Researches</a></li>
+                            <li><a href="#">Research Detail</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Starter</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li class="has-dropdown">
+                    <a href="index.html">Home <img src="./triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="index.html">Header Static</a></li>
+                        <li><a href="index.html">Header Slider</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Pages <img src="./triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="./blog-details.html">Blog Detail</a></li>
+                        <li><a href="#">Researches</a></li>
+                        <li><a href="#">Research Detail</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Starter</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Components <img src="./triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a></li>
+                <li><a href="#">Utilities <img src="./triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a></li>
+                <li><a href="#">Documentation <img src="./triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-title-banner blog-banner-bg">
+        <div class="title-banner-overlay"></div>
+        <div class="title-banner-content">
+            <h1>Medicare Blog</h1>
+            <p>Center of excellence</p>
+        </div>
+    </section>
+
+    <section class="blog-feed-section">
+        <div class="about-page-container">
+            <div class="posts-grid">
+                
+                <div class="blog-horizontal-card">
+                    <div class="blog-img-box">
+                        <img src="./31.jpg" alt="Should You Be Worried About Microplastics in Your Food?">
+                    </div>
+                    <div class="blog-content-box">
+                        <h3><a href="#">Should You Be Worried About Microplastics in Your Food?</a></h3>
+                        <div class="blog-meta">John Doe • 10 Jan, 2019</div>
+                        <p class="blog-excerpt">Plastic — it's in the air, sea and land... our healthcare experts investigate how molecular environmental updates impact daily dietary structures across global households.</p>
+                    </div>
+                </div>
+
+                <div class="blog-horizontal-card">
+                    <div class="blog-img-box">
+                        <img src="./6.jpg" alt="What to Expect During and After a Breast Biopsy">
+                    </div>
+                    <div class="blog-content-box">
+                        <h3><a href="#">What to Expect During and After a Breast Biopsy</a></h3>
+                        <div class="blog-meta">William Petro • 03 Feb, 2019</div>
+                        <p class="blog-excerpt">We interview Dr. Lim Siew Kuan, a leading consultant surgeon, to detail standard procedure timelines, preparatory stages, and modern post-diagnostic recovery phases.</p>
+                    </div>
+                </div>
+
+                <div class="blog-horizontal-card">
+                    <div class="blog-img-box">
+                        <img src="./5.jpg" alt="">
+                    </div>
+                    <div class="blog-content-box">
+                        <h3><a href="#">Understanding New Preventive Heart Health Procedures</a></h3>
+                        <div class="blog-meta">Sarah Jenkins • 24 Mar, 2019</div>
+                        <p class="blog-excerpt">Explore the structural diagnostic parameters and preventative methodologies deployed inside our advanced cardiac theater wings this season.</p>
+                    </div>
+                </div>
+
+                <div class="blog-horizontal-card">
+                    <div class="blog-img-box">
+                        <img src="./4.jpg" alt="">
+                    </div>
+                    <div class="blog-content-box">
+                        <h3><a href="#">The Future of Gene Therapy in Modern Oncology</a></h3>
+                        <div class="blog-meta">Michael Chang • 18 Apr, 2019</div>
+                        <p class="blog-excerpt">A deep-dive analysis outlining how targeted immune responses are altered at molecular baselines to securely deactivate complex tumor configurations.</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="blog-pagination-wrapper">
+                <ul class="pagination-items-list">
+                    <li class="page-control-arrow disabled">
+                        <a href="#" aria-label="Previous Page">‹</a>
+                    </li>
+                    <li class="page-number-item active">
+                        <a href="#">1</a>
+                    </li>
+                    <li class="page-number-item">
+                        <a href="#">2</a>
+                    </li>
+                    <li class="page-number-item text-dots">
+                        <span>•••</span>
+                    </li>
+                    <li class="page-control-arrow">
+                        <a href="#" aria-label="Next Page">›</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="blue-info-strip-section">
+        <div class="blue-strip-container">
+            <div class="info-strip-grid">
+                <div class="strip-item">
+                    <div class="strip-icon-box">
+                        <img src="customer-service.png" alt="Phone" class="strip-icon-img">
+                    </div>
+                    <div class="strip-text">
+                        <p class="strip-value">+(123) 456 78910</p>
+                        <p class="strip-label">Have a question? call us now</p>
+                    </div>
+                </div>
+
+                <div class="strip-item">
+                    <div class="strip-icon-box">
+                        <img src="mail-5.png" alt="Mail" class="strip-icon-img">
+                    </div>
+                    <div class="strip-text">
+                        <p class="strip-value">help@medicare.com</p>
+                        <p class="strip-label">Need support? Drop us an email</p>
+                    </div>
+                </div>
+
+                <div class="strip-item">
+                    <div class="strip-icon-box">
+                        <img src="clock-2.png" alt="Clock" class="strip-icon-img">
+                    </div>
+                    <div class="strip-text">
+                        <p class="strip-value">Mon – Sat 07:00 – 21:00</p>
+                        <p class="strip-label">We are open on</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-site-footer">
+        <div class="footer-container">
+            <div class="footer-columns-grid">
+                <div class="footer-brand-column">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Medicare Logo" class="footer-logo-img">
+                    </div>
+                    <h3 class="hospital-subname">BRIGHAM AND WOMEN'S HOSPITAL</h3>
+                    <div class="address-block">
+                        <p>75 FRANCIS STREET, BOSTON MA 02115</p>
+                        <p>General information: <a href="tel:6717325500">671-732-5500</a></p>
+                        <p>New Patients: <a href="tel:8002949999">800 294 9999</a></p>
+                    </div>
+                </div>
+                <div class="footer-links-column">
+                    <h4 class="column-heading">CENTERS</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#">Cancer Center</a></li>
+                        <li><a href="#">Heart & Vascular Center</a></li>
+                        <li><a href="#">The Lung Center</a></li>
+                        <li><a href="#">Neurosciences Center</a></li>
+                        <li><a href="#">Orthopaedic & Arthritis Center</a></li>
+                        <li><a href="#">Primary Care Center</a></li>
+                        <li><a href="#">Women's Health Center</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links-column split-links-column">
+                    <h4 class="column-heading">CLINICAL DEPARTMENTS</h4>
+                    <div class="split-lists-wrapper">
+                        <ul class="footer-links-list">
+                            <li><a href="#">Anesthesiology</a></li>
+                            <li><a href="#">Dermatology</a></li>
+                            <li><a href="#">Emergency Medicine</a></li>
+                            <li><a href="#">Medicine</a></li>
+                            <li><a href="#">Neurology</a></li>
+                        </ul>
+                        <ul class="footer-links-list">
+                            <li><a href="#">Neurosurgery</a></li>
+                            <li><a href="#">Orthopaedic Surgery</a></li>
+                            <li><a href="#">Obstetrics and Gynecology</a></li>
+                            <li><a href="#">Obstetrics and Gynecology</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-links-column">
+                    <h4 class="column-heading">DEPARTMENTS</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#">Anesthesiology</a></li>
+                        <li><a href="#">Dermatology</a></li>
+                        <li><a href="#">Emergency Medicine</a></li>
+                        <li><a href="#">Medicine</a></li>
+                        <li><a href="#">Neurology</a></li>
+                        <li><a href="#">Neurosurgery</a></li>
+                        <li><a href="#">Orthopaedic Surgery</a></li>
+                        <li><a href="#">Obstetrics and Gynecology</a></li>
+                        <li><a href="#">Obstetrics and Gynecology</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-copyright-bar">
+        <div class="copyright-container">
+            <p class="copyright-text">Thank you for creating with medicare | 2026 © ThemeWagon</p>
+            <p class="version-text">v1.1.0</p>
+            <a href="#" class="scroll-to-top-btn">▲</a>
+        </div>
+    </div>
+</body>
+
+</html>

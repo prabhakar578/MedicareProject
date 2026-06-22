@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicare</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="cou_and_feild_box">
+            <div class="language-selector">
+                <div class="lang-trigger">
+                    <img src="./united-states.svg" alt="United States Flag" class="country_img">
+                    <span class="lang-arrow">▼</span>
+                </div>
+                <ul class="lang-dropdown">
+                    <li class="lang-item active">
+                        <a href=""> <img src="india.jpg" alt="IN"></a>
+                        <span class="lang-text">IN</span>
+                        <span class="lang-check">✓</span>
+                    </li>
+                    <li class="lang-item">
+                        <a href=""><img src="./uk.png" alt="UK"></a>
+                        <span class="lang-text">UK</span>
+                        <span class="lang-check"></span>
+                    </li>
+                    <li class="lang-item">
+                        <a href=""> <img src="us.jpg" alt="US"></a>
+                        <span class="lang-text">US</span>
+                        <span class="lang-check"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="search-box">
+                <input type="text" placeholder="Search..." id="input" />
+                <span class="icon">🔍</span>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="doctor-btn btn-alt desktop-text">Find a Doctor</button>
+            <button class="doctor-btn btn-alt mobile-text">Doctor</button>
+
+            <a href="#appointmentModal"><button class="appointment-btn btn-primary desktop-text">Request
+                    Appointment</button></a>
+            <a href="#appointmentModal"><button class="appointment-btn btn-primary mobile-text">Appointment</button></a>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="header-branding">
+            <div class="logo">
+                <img src="logo.png" alt="Medicare" class="logo-img" />
+            </div>
+
+            <div class="header-info-strip">
+                <div class="info-block">
+                    <img src="location-pin-svgrepo-com (1).svg" alt="Location" class="info-icon" />
+                    <div class="info-text">
+                        <h3>Address</h3>
+                        <p>5525 W Slauson Ave,<br>LA, CA 90056, USA</p>
+                    </div>
+                </div>
+
+                <div class="vertical-divider"></div>
+
+                <div class="info-block">
+                    <img src="headset-svgrepo-com.svg" alt="Phone" class="info-icon" />
+                    <div class="info-text">
+                        <h3>Phone Appointment</h3>
+                        <p><a href="tel:5555551234">(555) 555-1234</a></p>
+                        <p><a href="tel:5555555678">(555) 555-5678</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <button class="mobile-nav-toggle" aria-label="Toggle Navigation">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+        </div>
+
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li class="has-dropdown">
+                    <a href="#">Home <img src="./triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Header Static</a></li>
+                        <li><a href="#">Header Slider</a></li>
+                        <li><a href="#">Youtube Background</a></li>
+                        <li><a href="#">Self Hosted Video</a></li>
+                        <li><a href="#">RTL</a></li>
+                    </ul>
+                </li>
+                <li class="has-dropdown">
+                    <a href="#">Pages <img src="./triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./blog.html">Blog</a></li>
+                        <li><a href="./blog-details.html">Blog Detail</a></li>
+                        <li><a href="#">Researches</a></li>
+                        <li><a href="#">Research Detail</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Starter</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Components <img src="./triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a></li>
+                <li><a href="#">Utilities <img src="./triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a></li>
+                <li><a href="#">Documentation <img src="./triangle-down-svgrepo-com (1).svg" alt="" class="tri" /></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="carousel">
+        <input type="radio" name="slider" id="slide1" checked />
+        <input type="radio" name="slider" id="slide2" />
+        <input type="radio" name="slider" id="slide3" />
+
+        <div class="slides">
+            <div class="slide">
+                <img src="2.jpg" alt="Doctor" />
+                <div class="info info-middle">
+                    <h1>Small Injuries May<br />Lead to Big Problem</h1>
+                    <p>Your environment could affect your fertility</p>
+                    <a href=""> <button class="butinfo">Learn More ›</button></a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="3.jpg" alt="Medical care" />
+                <div class="info info-left">
+                    <h1>One Stop Solution<br />Medical services</h1>
+                    <p>Call to schedule an appointment today</p>
+                    <a href=""> <button class="butinfo">Learn More ›</button></a>
+                </div>
+            </div>
+
+            <div class="slide">
+                <img src="1.jpg" alt="Hospital" />
+                <div class="info info-right">
+                    <h1>Your Health Is Our<br />First Priority</h1>
+                    <p>Expert doctors and modern healthcare solutions</p>
+                    <button class="butinfo">Learn More ›</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <label for="slide3" class="arrow left arrow-1">‹</label>
+            <label for="slide2" class="arrow right arrow-1">›</label>
+
+            <label for="slide1" class="arrow left arrow-2">‹</label>
+            <label for="slide3" class="arrow right arrow-2">›</label>
+
+            <label for="slide2" class="arrow left arrow-3">‹</label>
+            <label for="slide1" class="arrow right arrow-3">›</label>
+        </div>
+    </section>
+
+    <div class="social-share-strip">
+        <div class="social-strip-content">
+            <h2 class="downtext">STAY INFORMED. CONNECT WITH US.</h2>
+            <div class="social-icons">
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+                <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/145/145808.png" alt="Pinterest"></a>
+            </div>
+        </div>
+    </div>
+
+    <p class="para1">Brigham Health</p>
+    <h2 class="large-para">HELPING OUR PATIENTS</h2>
+    <div class="line2"></div>
+
+    <div class="cointainer-3s">
+        <div class="section-wrapper">
+            <div class="box1">
+                <div class="box-1">
+                    <h2 class="text11">HOW CAN WE HELP YOU ?</h2>
+                </div>
+                <div class="box-2">
+                    <div class="box-21">Find a Doctor</div>
+                    <div class="box-21">Request Appointment</div>
+                    <div class="box-21">Location</div>
+                    <div class="box-21">Services</div>
+                </div>
+            </div>
+
+            <div class="main-content-column">
+                <section class="news-section">
+                    <div class="card">
+                        <img src="doctor1.jpg" alt="Doctor">
+                        <div class="content">
+                            <h3>Brigham Health Physicians Named 'Top Doctors'</h3>
+                            <p>More than 275 Brigham Health physicians were included on Boston magazine's 2019 list of
+                                "Top Doctors."</p>
+                        </div>
+                        <div class="footer">
+                            <a href="#">Learn More ›</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="doctor2.jpg" alt="Doctor">
+                        <div class="content">
+                            <h3>BWH Named to US News & World Report's Honor Roll</h3>
+                            <p>Brigham and Women's Hospital has ranked among the top hospitals in the nation.</p>
+                        </div>
+                        <div class="footer">
+                            <a href="#">Learn More ›</a>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="latest-news-card-box">
+                    <div class="card-header-title">
+                        <h2>LATEST NEWS</h2>
+                    </div>
+                    <div class="card-body-content">
+                        <ul class="news-bullet-points">
+                            <li><a href="#">Scientists create molecular tool to remove toxic protein from neuronal
+                                    models of dementia</a></li>
+                            <li><a href="#">Older women benefit significantly when screened with 3-D mammography</a>
+                            </li>
+                            <li><a href="#">Older women benefit significantly when screened with 3-D mammography</a>
+                            </li>
+                            <li><a href="#">Public announcement concerning a proposed health care project</a></li>
+                        </ul>
+                    </div>
+                    <div class="card-footer-link">
+                        <a href="#">View more news ›</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="centers-of-excellence">
+        <div class="centers-banner-content">
+            <p class="banner-sub">All Centers</p>
+            <h2 class="banner-title">CENTERS OF EXCELLENCE</h2>
+            <div class="banner-line"></div>
+
+            <div class="centers-buttons-grid">
+                <div class="center-btn">Cancer Center <span>›</span></div>
+                <div class="center-btn">Orthopedic center <span>›</span></div>
+                <div class="center-btn">Heart and vascular center <span>›</span></div>
+                <div class="center-btn">The lung center <span>›</span></div>
+                <div class="center-btn">Neuroscience center <span>›</span></div>
+                <div class="center-btn">Women Health Center <span>›</span></div>
+                <div class="center-btn">Primary Care Center <span>›</span></div>
+                <div class="center-btn">All Departments & services <span>›</span></div>
+            </div>
+
+            <p class="centers-description">
+                Although there is no magic formula for a long, healthy life, decades of research confirm certain
+                behaviors improve your chances. After 43 years, The Nurses' Health Study continues to find new insights
+                for maintaining a healthy lifestyle.
+            </p>
+        </div>
+    </section>
+
+    <section class="recent-posts-section">
+        <div class="posts-heading">
+            <p class="posts-sub">Recent Posts</p>
+            <h2 class="posts-title">FROM OUR BLOG</h2>
+            <div class="posts-line"></div>
+        </div>
+
+        <div class="posts-container">
+            <div class="posts-grid">
+                <div class="blog-horizontal-card">
+                    <div class="blog-img-box">
+                        <img src="./img71.jpg" alt="Dental chair">
+                    </div>
+                    <div class="blog-content-box">
+                        <h3><a href="#">Should You Be Worried About Microplastics in Your Food?</a></h3>
+                        <p class="blog-meta">John Doe • 10 Jan, 2019</p>
+                        <p class="blog-excerpt">Plastic — it's in the air, sea and probably your body. Find out what are
+                            microplastics doing to your health...</p>
+                    </div>
+                </div>
+
+                <div class="blog-horizontal-card">
+                    <div class="blog-img-box">
+                        <img src="./img72.jpg" alt="Medical injection">
+                    </div>
+                    <div class="blog-content-box">
+                        <h3><a href="#">What to Expect During and After a Breast Biopsy</a></h3>
+                        <p class="blog-meta">William Petro • 03 Feb, 2019</p>
+                        <p class="blog-excerpt">We interview Dr Lim Siew Kuan, a general surgeon at Mount Elizabeth
+                            Novena Hospital, to understand what to...</p>
+                    </div>
+                </div>
+
+                <div class="blog-horizontal-card">
+                    <div class="blog-img-box">
+                        <img src="./img73.jpg" alt="Laboratory personnel">
+                    </div>
+                    <div class="blog-content-box">
+                        <h3><a href="#">How Heart Attack Signs Differ in Men & Women</a></h3>
+                        <p class="blog-meta">Sultan Sentu • 05 Mar, 2019</p>
+                        <p class="blog-excerpt">Is there 'gender equality' in heart attacks? The short answer is no.
+                            Here's what you need to know...</p>
+                    </div>
+                </div>
+
+                <div class="blog-horizontal-card">
+                    <div class="blog-img-box">
+                        <img src="./img74.jpg" alt="Physical therapy">
+                    </div>
+                    <div class="blog-content-box">
+                        <h3><a href="#">Prenatal Infections and How to Avoid Them</a></h3>
+                        <p class="blog-meta">Marry Com • 29 Jun, 2019</p>
+                        <p class="blog-excerpt">Prenatal infections can interfere with the health of both you and your
+                            baby, so it's important to take steps to prevent them...</p>
+                    </div>
+                </div>
+
+                <div class="blog-horizontal-card">
+                    <div class="blog-img-box">
+                        <img src="./img75.jpg" alt="Scientist with microscope">
+                    </div>
+                    <div class="blog-content-box">
+                        <h3><a href="#">What are the Screening Options for Heart Disease?</a></h3>
+                        <p class="blog-meta">Illiana Daina • 29 Jun, 2019</p>
+                        <p class="blog-excerpt">We interview Dr Lim Siew Kuan, a general surgeon at Mount Elizabeth
+                            Novena Hospital, to understand what to expect...</p>
+                    </div>
+                </div>
+
+                <div class="blog-horizontal-card">
+                    <div class="blog-img-box">
+                        <img src="./img76.jpg" alt="Doctor checking patient">
+                    </div>
+                    <div class="blog-content-box">
+                        <h3><a href="#">Should You Be Worried About Microplastics?</a></h3>
+                        <p class="blog-meta">Tom Andrew • 29 Jun, 2019</p>
+                        <p class="blog-excerpt">Plastic — it's in the air, sea and probably your body. Find out what are
+                            microplastics doing to your health....</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="breakthroughs-banner-section">
+        <div class="breakthroughs-container">
+            <div class="breakthroughs-split">
+                <div class="breakthroughs-text-side">
+                    <h2>Life, Giving, Breakthroughs.</h2>
+                    <p>We are inspired by our patients' courage, our caregivers' compassion, and our scientists'
+                        curiosity—all fueled by our donors' generosity.</p>
+                    <a href="#" class="give-now-btn">Give Now</a>
+                </div>
+                <div class="breakthroughs-image-side">
+                    <img src="./img78.jpeg" alt="Medical team discussing with patient">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="blue-info-strip-section">
+        <div class="blue-strip-container">
+            <div class="info-strip-grid">
+                <div class="strip-item">
+                    <div class="strip-icon-box">
+                        <img src="customer-service.png" alt="Phone" class="strip-icon-img">
+                    </div>
+                    <div class="strip-text">
+                        <p class="strip-value">+(123) 456 78910</p>
+                        <p class="strip-label">Have a question? call us now</p>
+                    </div>
+                </div>
+
+                <div class="strip-item">
+                    <div class="strip-icon-box">
+                        <img src="mail-5.png" alt="Mail" class="strip-icon-img">
+                    </div>
+                    <div class="strip-text">
+                        <p class="strip-value">help@medicare.com</p>
+                        <p class="strip-label">Need support? Drop us an email</p>
+                    </div>
+                </div>
+
+                <div class="strip-item">
+                    <div class="strip-icon-box">
+                        <img src="clock-2.png" alt="Clock" class="strip-icon-img">
+                    </div>
+                    <div class="strip-text">
+                        <p class="strip-value">Mon – Sat 07:00 – 21:00</p>
+                        <p class="strip-label">We are open on</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-site-footer">
+        <div class="footer-container">
+            <div class="footer-columns-grid">
+                <div class="footer-brand-column">
+                    <div class="footer-logo">
+                        <img src="logo.png" alt="Medicare Logo" class="footer-logo-img">
+                    </div>
+                    <h3 class="hospital-subname">BRIGHAM AND WOMEN'S HOSPITAL</h3>
+                    <div class="address-block">
+                        <p>75 FRANCIS STREET, BOSTON MA 02115</p>
+                        <p>General information: <a href="tel:6717325500">671-732-5500</a></p>
+                        <p>New Patients: <a href="tel:8002949999">800 294 9999</a></p>
+                    </div>
+                </div>
+
+                <div class="footer-links-column">
+                    <h4 class="column-heading">CENTERS</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#">Cancer Center</a></li>
+                        <li><a href="#">Heart & Vascular Center</a></li>
+                        <li><a href="#">The Lung Center</a></li>
+                        <li><a href="#">Neurosciences Center</a></li>
+                        <li><a href="#">Orthopaedic & Arthritis Center</a></li>
+                        <li><a href="#">Primary Care Center</a></li>
+                        <li><a href="#">Women's Health Center</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-links-column split-links-column">
+                    <h4 class="column-heading">CLINICAL DEPARTMENTS</h4>
+                    <div class="split-lists-wrapper">
+                        <ul class="footer-links-list">
+                            <li><a href="#">Anesthesiology</a></li>
+                            <li><a href="#">Dermatology</a></li>
+                            <li><a href="#">Emergency Medicine</a></li>
+                            <li><a href="#">Medicine</a></li>
+                            <li><a href="#">Neurology</a></li>
+                        </ul>
+                        <ul class="footer-links-list">
+                            <li><a href="#">Neurosurgery</a></li>
+                            <li><a href="#">Orthopaedic Surgery</a></li>
+                            <li><a href="#">Obstetrics and Gynecology</a></li>
+                            <li><a href="#">Obstetrics and Gynecology</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-links-column">
+                    <h4 class="column-heading">DEPARTMENTS</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="#">Anesthesiology</a></li>
+                        <li><a href="#">Dermatology</a></li>
+                        <li><a href="#">Emergency Medicine</a></li>
+                        <li><a href="#">Medicine</a></li>
+                        <li><a href="#">Neurology</a></li>
+                        <li><a href="#">Neurosurgery</a></li>
+                        <li><a href="#">Orthopaedic Surgery</a></li>
+                        <li><a href="#">Obstetrics and Gynecology</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="footer-copyright-bar">
+        <div class="copyright-container">
+            <p class="copyright-text">Thank you for creating with medicare | 2026 © ThemeWagon</p>
+            <p class="version-text">v1.1.0</p>
+        </div>
+    </div>
+
+    <div class="appointment-modal-overlay" id="appointmentModal">
+        <div class="modal-card-box">
+            <div class="modal-header-bar">
+                <h2>Make Appointment</h2>
+                <a href="#" class="modal-close-btn">&times;</a>
+            </div>
+
+            <form class="modal-form-body">
+                <div class="form-row-grid">
+                    <div class="form-group-item">
+                        <label>Patient name</label>
+                        <input type="text" placeholder="Enter full name">
+                    </div>
+                    <div class="form-group-item">
+                        <label>Date of birth*</label>
+                        <div class="dob-select-wrapper">
+                            <select name="dob-day" required>
+                                <option value="" disabled selected>DD</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+
+                            <select name="dob-month" required>
+                                <option value="" disabled selected>MM</option>
+                                <option value="1">Jan</option>
+                                <option value="2">Feb</option>
+                                <option value="3">Mar</option>
+                                <option value="4">Apr</option>
+                                <option value="5">May</option>
+                                <option value="6">Jun</option>
+                                <option value="7">Jul</option>
+                                <option value="8">Aug</option>
+                                <option value="9">Sep</option>
+                                <option value="10">Oct</option>
+                                <option value="11">Nov</option>
+                                <option value="12">Dec</option>
+                            </select>
+
+                            <select name="dob-year" required>
+                                <option value="" disabled selected>YYYY</option>
+                                <option value="2026">2026</option>
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                                <option value="1989">1989</option>
+                                <option value="1988">1988</option>
+                                <option value="1987">1987</option>
+                                <option value="1986">1986</option>
+                                <option value="1985">1985</option>
+                                <option value="1984">1984</option>
+                                <option value="1983">1983</option>
+                                <option value="1982">1982</option>
+                                <option value="1981">1981</option>
+                                <option value="1980">1980</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group-item">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter Your Email">
+                    </div>
+                    <div class="form-group-item">
+                        <label>Contact number</label>
+                        <input type="tel" placeholder="Contact number">
+                    </div>
+                    <div class="form-group-item">
+                        <label>Preferred doctor (if any)</label>
+                        <input type="text" placeholder="Enter doctor's name">
+                    </div>
+                    <div class="form-group-item">
+                        <label>At the following hospital</label>
+                        <select>
+                            <option>No preference</option>
+                        </select>
+                    </div>
+                    <div class="form-group-item">
+                        <label>Specialty</label>
+                        <select>
+                            <option>I am not sure</option>
+                            <option>Central Hospital</option>
+                            <option>Square Hospital</option>
+                        </select>
+
+                    </div>
+                    <div class="form-group-item">
+                        <label>Reference code (If any)</label>
+                        <input type="text" placeholder="Enter the code">
+                    </div>
+                    <div class="form-group-item full-width-field">
+                        <label>Address</label>
+                        <input type="text" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-group-item">
+                        <label>Gender</label>
+                        <div class="radio-options-wrapper">
+                            <label><input type="radio" name="gender"> Male</label>
+                            <label><input type="radio" name="gender"> Female</label>
+                        </div>
+                    </div>
+                    <div class="form-group-item">
+                        <label>Appointment date</label>
+                        <input type="date">
+                    </div>
+                    <div class="form-group-item full-width-field checkbox-item">
+                        <label><input type="checkbox"> Confirmation and I agree with terms and conditions</label>
+                    </div>
+                </div>
+
+                <div class="modal-actions-footer">
+                    <button type="submit" class="btn-submit">Submit</button>
+                    <a href="#" class="btn-cancel">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
