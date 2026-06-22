@@ -891,7 +891,7 @@ body {
   width: 100%;
   padding: 80px 20px;
   background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.9)),
-    url('./backgroundimg\'.jpg') no-repeat center center/cover;
+    url("img/backgroundimg'.jpg") no-repeat center center/cover;
   color: #ffffff;
   text-align: center;
 }
@@ -1456,7 +1456,7 @@ body {
   position: relative;
   width: 100%;
   height: 280px;
-  background: url('./about1.jpg') no-repeat center center/cover;
+  background: url('img/about1.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   padding-left: 10%;
@@ -1803,7 +1803,7 @@ body {
 }
 
 .blog-banner-bg {
-  background: url('./img71.jpg') no-repeat center center/cover;
+  background: url('img/img71.jpg') no-repeat center center/cover;
 }
 
 .blog-feed-section {
@@ -1915,7 +1915,7 @@ body {
 }
 
 .article-featured-banner {
-  background: url('./81.jpg') no-repeat center center/cover;
+  background: url('img/81.jpg') no-repeat center center/cover;
 }
 
 .title-banner-overlay-dark {
