@@ -2593,3 +2593,17 @@ body {
     font-size: 20px !important;
   }
 }
+@media screen and (max-width: 768px) {
+  .doc-card-inner {
+    flex-direction: column !important;
+  }
+
+  .doc-image-side {
+    width: 100% !important;
+    height: 250px !important;
+  }
+
+  .doc-info-side {
+    padding: 20px !important;
+  }
+}
