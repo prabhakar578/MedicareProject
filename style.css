@@ -1951,53 +1951,54 @@ body {
 }
 
 .author-bio-card-box {
-  display: flex;
-  gap: 30px;
-  padding: 40px;
-  background-color: #f8fafc;
-  border: 1px solid #e2e8f0;
-  border-radius: 6px;
-  margin-top: 40px;
-  align-items: center;
+  display: flex !important;
+  gap: 30px !important;
+  padding: 40px !important;
+  background-color: #f8fafc !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 6px !important;
+  margin-top: 40px !important;
+  align-items: center !important;
+  width: 100% !important;
 }
 
 .bio-avatar-frame {
-  width: 160px;
-  height: auto;
-  flex-shrink: 0;
+  width: 160px !important;
+  height: auto !important;
+  flex-shrink: 0 !important;
 }
 
 .bio-avatar-img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  object-fit: contain !important;
 }
 
 .bio-main-text {
-  flex-grow: 1;
+  flex-grow: 1 !important;
 }
 
 .bio-main-text h4 {
-  font-size: 20px;
-  color: #004a8f;
-  margin-bottom: 4px;
-  font-weight: 800;
+  font-size: 20px !important;
+  color: #004a8f !important;
+  margin-bottom: 4px !important;
+  font-weight: 800 !important;
 }
 
 .bio-title {
-  font-size: 13px;
-  font-weight: 700;
-  color: #94a3b8;
-  text-transform: uppercase;
-  margin-bottom: 16px;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  color: #94a3b8 !important;
+  text-transform: uppercase !important;
+  margin-bottom: 16px !important;
 }
 
 .bio-desc {
-  font-size: 15px;
-  color: #475569;
-  line-height: 1.6;
-  margin-bottom: 20px;
+  font-size: 15px !important;
+  color: #475569 !important;
+  line-height: 1.6 !important;
+  margin-bottom: 20px !important;
 }
 
 .main-site-footer {
@@ -2467,20 +2468,25 @@ body {
   }
 
   .author-bio-card-box {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 30px 20px;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    padding: 30px 20px !important;
   }
 
   .bio-avatar-frame {
-    width: 140px;
-    margin-bottom: 15px;
+    width: 140px !important;
+    margin-bottom: 15px !important;
   }
 
   .bio-social-icons {
-    justify-content: center;
+    justify-content: center !important;
   }
+}
+.bio-social-icons a img {
+  width: 14px !important;
+  height: 14px !important;
+  object-fit: contain !important;
 }
 
 @media screen and (max-width: 680px) {
@@ -2605,5 +2611,40 @@ body {
 
   .doc-info-side {
     padding: 20px !important;
+  }
+}
+@media screen and (min-width: 993px) {
+  .author-bio-card-box {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    text-align: left !important;
+    gap: 30px !important;
+    padding: 40px !important;
+    background-color: #f8fafc !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+  }
+.bio-avatar-frame {
+    width: 160px !important;
+    max-width: 160px !important;
+    height: auto !important;
+    flex-shrink: 0 !important;
+    overflow: hidden !important;
+    border-radius: 4px !important;
+  }
+
+  .bio-avatar-img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    object-position: top center !important;
+    display: block !important;
+  }
+
+  .bio-main-text {
+    flex: 1 !important;
+    min-width: 0 !important;
   }
 }
